@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terrence Young · Portfolio</title>
+<meta name="description" content="IT and cybersecurity learner who builds budgeting tools, automations and installable web apps.">
+<!--
+  Portfolio page for GitHub Pages. ELI5: this one file IS the website.
+  To change it: edit the words below, save, and push to GitHub (see LAUNCH_KIT.md).
+  Links marked TODO need your real GitHub / LinkedIn / store links once you have them.
+-->
+<style>
+  :root{--bg:#f7f6f2;--surface:#ffffff;--ink:#1d2433;--muted:#5d6676;--line:#e3e1da;--accent:#2f5d50;--accent-soft:#e3eee9;--chip:#eef0f4}
+  @media (prefers-color-scheme:dark){:root{--bg:#12161d;--surface:#1a2029;--ink:#e8eaee;--muted:#a3abb8;--line:#2a313c;--accent:#7cc4a9;--accent-soft:#1f3a32;--chip:#232a35}}
+  *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  .wrap{max-width:980px;margin:0 auto;padding:0 16px}
+  header{padding:56px 0 28px;border-bottom:1px solid var(--line)}
+  h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:0 0 10px;letter-spacing:-.02em}
+  .lede{font-size:18px;color:var(--muted);max-width:640px;margin:0 0 18px}
+  .links{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;padding:9px 16px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;font-weight:600;font-size:14px}
+  .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  @media (prefers-color-scheme:dark){.btn.primary{color:#0f1a16}}
+  h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:44px 0 16px}
+  .proj{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px;margin-bottom:18px;display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:start}
+  .proj h3{margin:0 0 6px;font-size:22px} .proj p{margin:0 0 12px;color:var(--muted)}
+  .proj ul{margin:0 0 14px;padding-left:18px} .proj li{margin:3px 0}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+  .chip{font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--chip);color:var(--muted)}
+  .chip.live{background:var(--accent-soft);color:var(--accent)}
+  .shots{display:flex;gap:10px;align-items:flex-start}
+  .shots img{width:100%;border-radius:10px;border:1px solid var(--line);background:#fff}
+  .shots.two img{width:50%}
+  .small{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+  .small .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px}
+  .small h3{margin:0 0 4px;font-size:17px} .small p{margin:0;color:var(--muted);font-size:14px}
+  footer{margin:48px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:18px}
+  @media (max-width:760px){.proj{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Terrence Young</h1>
+    <p class="lede">IT and cybersecurity learner in Miami. I build practical tools people use every day: a budget planner for first paychecks, installable web apps, and automations that save hours.</p>
+    <div class="links">
+      <a class="btn primary" href="mailto:terrence.young101@gmail.com">Email me</a>
+      <a class="btn" href="https://github.com/JusArcadian" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a><!-- TODO: your LinkedIn link -->
+    </div>
+  </header>
+
+  <h2>Featured projects</h2>
+
+  <section class="proj">
+    <div>
+      <div class="chips"><span class="chip live">Product</span><span class="chip">Python</span><span class="chip">Google Apps Script</span><span class="chip">Google Sheets API</span><span class="chip">Excel</span></div>
+      <h3>Paycheck Planner</h3>
+      <p>A budget spreadsheet for students and first-jobbers, built by a Python program from one settings file, in 6 color themes for Google Sheets and Excel.</p>
+      <ul>
+        <li>"Safe to spend until payday" after bills, plus a "Can I afford it?" check</li>
+        <li>Paydays on any schedule, including the 15th &amp; 30th, weekends, bank holidays and early-pay banks</li>
+        <li>2026 US tax estimates, live inflation data, debt payoff planner, savings goals and net worth</li>
+        <li>Apps Script menu: overspending alerts by email, import data into a new version, sort by date</li>
+        <li>Versioned with patch notes and a study guide; tested with automated recalculation (0 formula errors)</li>
+      </ul>
+      <div class="links"><a class="btn" href="#" >Get the template</a><!-- TODO: Etsy or Gumroad link --></div>
+    </div>
+    <div class="shots"><img src="img/planner-dashboard.png" alt="Paycheck Planner dashboard with groups, alerts and spending donuts"></div>
+  </section>
+
+  <section class="proj">
+    <div>
+      <div class="chips"><span class="chip live">Web app</span><span class="chip">JavaScript</span><span class="chip">PWA</span><span class="chip">Offline</span><span class="chip">57 tests</span></div>
+      <h3>Paycheck Planner app</h3>
+      <p>The same money math as the spreadsheet, as an app you install on your phone. Your data never leaves your device.</p>
+      <ul>
+        <li>Works offline and installs from the browser (no app store needed)</li>
+        <li>57 automated checks keep the app's math identical to the spreadsheet, to the cent</li>
+        <li>Imports a budget straight from the Google Sheet</li>
+      </ul>
+    </div>
+    <div class="shots two"><img src="img/planner-app.png" alt="Paycheck Planner app setup screen on a phone"><img src="img/planner-phone.png" alt="Phone view tab of the spreadsheet"></div>
+  </section>
+
+  <section class="proj">
+    <div>
+      <div class="chips"><span class="chip live">Automation</span><span class="chip">Python</span><span class="chip">GitHub Actions</span><span class="chip">JavaScript</span></div>
+      <h3>Opportunity Radar</h3>
+      <p>My job-search command center. Every morning it finds jobs near me and remote, scores them, flags scams, and turns my saved jobs into tasks in Notion.</p>
+      <ul>
+        <li>Resume maker: a tailored one-page resume for every saved job, built only from my real experience (no AI made-up skills)</li>
+        <li>Take-home pay per paycheck (2026 tax math) and commute time from home on every listing</li>
+        <li>Events + talking points: a 30-second intro and questions to ask for career fairs, meetups and interviews</li>
+        <li>Pay check against U.S. labor data, scam red flags, Gigs and Deals tabs; works offline as a phone app</li>
+      </ul>
+      <div class="links"><a class="btn primary" href="https://jusarcadian.github.io/opportunity-radar/" target="_blank" rel="noopener">Try the app</a><a class="btn" href="https://github.com/JusArcadian/opportunity-radar" target="_blank" rel="noopener">Code</a></div>
+    </div>
+    <div class="shots"><img src="img/radar-gigs.png" alt="Opportunity Radar Gigs tab showing earnings tiles"></div>
+  </section>
+
+  <h2>More work</h2>
+  <div class="small">
+    <div class="card"><h3>Notion Command Center</h3><p>One workspace for projects, tasks, calendar and notes, including paydays and bills.</p></div>
+    <div class="card"><h3>Windows Installation Lab</h3><p>Hands-on IT support practice: installing and setting up Windows, documented step by step.</p></div>
+    <div class="card"><h3>My Budget Dashboard</h3><p>My first Google Sheets budget (50/30/20). It grew into Paycheck Planner.</p></div>
+    <div class="card"><h3>Small-business security checklists</h3><p>In progress: simple security setup guides for small businesses (MFA, backups, Wi-Fi).</p></div>
+  </div>
+
+  <h2>Skills</h2>
+  <div class="chips">
+    <span class="chip">Python</span><span class="chip">JavaScript</span><span class="chip">HTML/CSS</span><span class="chip">Google Apps Script</span>
+    <span class="chip">Google Sheets &amp; Excel</span><span class="chip">GitHub Actions</span><span class="chip">REST APIs</span><span class="chip">PWAs</span>
+    <span class="chip">IT support</span><span class="chip">Customer support</span><span class="chip">Security basics</span><span class="chip">Notion</span>
+  </div>
+
+  <footer>Plain HTML and CSS · Hosted free on GitHub Pages</footer>
+</div>
+</body>
+</html>
