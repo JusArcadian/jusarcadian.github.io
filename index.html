@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Terrence Young · Portfolio</title>
-<meta name="description" content="IT and cybersecurity learner who builds budgeting tools, automations and installable web apps.">
+<meta name="description" content="IT and cybersecurity professional in training. I build pricing, budget and job-search tools for small businesses and job seekers.">
 <!--
   Portfolio page for GitHub Pages. ELI5: this one file IS the website.
   To change it: edit the words below, save, and push to GitHub (see LAUNCH_KIT.md).
@@ -19,7 +19,7 @@
   h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:0 0 10px;letter-spacing:-.02em}
   .lede{font-size:18px;color:var(--muted);max-width:640px;margin:0 0 18px}
   .links{display:flex;flex-wrap:wrap;gap:10px}
-  .btn{display:inline-block;padding:9px 16px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;font-weight:600;font-size:14px}
+  .btn{display:inline-flex;align-items:center;min-height:44px;padding:9px 16px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;font-weight:600;font-size:14px}
   .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
   @media (prefers-color-scheme:dark){.btn.primary{color:#0f1a16}}
   h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:44px 0 16px}
@@ -36,6 +36,16 @@
   .small .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px}
   .small h3{margin:0 0 4px;font-size:17px} .small p{margin:0;color:var(--muted);font-size:14px}
   footer{margin:48px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:18px}
+  .proj>div{min-width:0}
+  .trade{margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+  .trade h4{margin:0 0 4px;font-size:16px} .trade p{font-size:14px;margin:0 0 10px}
+  .trade ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+  .trade li{margin:0}
+  .trade a{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:44px;padding:10px 14px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);text-decoration:none;font-weight:600;font-size:15px;line-height:1.3}
+  .trade a:hover,.trade a:focus-visible{border-color:var(--accent)}
+  .trade a span{flex-shrink:0;color:var(--accent)}
+  .trade a small{display:block;font-weight:400;color:var(--muted);font-size:13px}
+  .trade a.bundle{background:var(--accent-soft);border-color:var(--accent)}
   @media (max-width:760px){.proj{grid-template-columns:1fr}}
 </style>
 </head>
@@ -43,7 +53,7 @@
 <div class="wrap">
   <header>
     <h1>Terrence Young</h1>
-    <p class="lede">IT and cybersecurity learner in Miami. I build practical tools people use every day: a budget planner for first paychecks, installable web apps, and automations that save hours.</p>
+    <p class="lede">IT and cybersecurity professional in training. I build tools that help small businesses and job seekers with everyday work and money problems, using Python, JavaScript, Excel and Google Sheets. Based in South Florida, open to remote work.</p>
     <div class="links">
       <a class="btn primary" href="mailto:terrence.young101@gmail.com">Email me</a>
       <a class="btn" href="https://github.com/JusArcadian" target="_blank" rel="noopener">GitHub</a>
@@ -82,6 +92,16 @@
         <li>Locked formulas, blank and example copies, tested with automated recalculation (0 formula errors)</li>
       </ul>
       <div class="links"><a class="btn" href="https://teren.gumroad.com/l/jnlzpm" target="_blank" rel="noopener">Get the planner ($29)</a></div>
+      <div class="trade">
+        <h4>Made for your trade</h4>
+        <p>The same planner, set up for one line of work.</p>
+        <ul>
+          <li><a href="https://teren.gumroad.com/l/pggugq" target="_blank" rel="noopener">Cleaning Business <span>$29</span></a></li>
+          <li><a href="https://teren.gumroad.com/l/cczktc" target="_blank" rel="noopener">Lawn Care &amp; Landscaping <span>$29</span></a></li>
+          <li><a href="https://teren.gumroad.com/l/zuqkp" target="_blank" rel="noopener">Handyman <span>$29</span></a></li>
+          <li><a class="bundle" href="https://teren.gumroad.com/l/zfdxbo" target="_blank" rel="noopener"><div>Small Business Money Kit<small>Job Price Planner + Paycheck Planner. Saves $4.</small></div><span>$34</span></a></li>
+        </ul>
+      </div>
     </div>
     <div class="shots"><img src="img/job-price-cover.png" alt="Job Price and Profit Planner: price to quote, lowest price, profit and pay per hour"></div>
   </section>
